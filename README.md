@@ -10,8 +10,8 @@ This project was built as hands-on practice while preparing for the **AWS Certif
 
 ## Architecture Flow
 
-![Architecture Diagram](images/architecture-diagram.png) 
-*(Note: Replace this image path with an actual screenshot of your architecture diagram)*
+![Architecture Diagram](architecture-diagram.png) 
+
 
 1. **API Gateway:** Acts as the REST API entry point, securely receiving `POST` requests containing order data.
 2. **Amazon SQS:** API Gateway passes the payload directly into an SQS queue. This decouples the ingestion layer from the processing layer, acting as a buffer during traffic surges.
